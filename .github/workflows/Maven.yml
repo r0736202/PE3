@@ -24,7 +24,7 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with: 
-          username: ${{ secrets.Dockerhubusername}}
-          password: ${{ secrets.Dockerhubpassword}}
+          username: ${{ secrets.username}}
+          password: ${{ secrets.password}}
           repository: anouarfay/pe3
           tag_with_ref: true
